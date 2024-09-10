@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Classes auxiliares */
+.clear { clear: both; }
+.container {
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/* Estilos Site */
+
+/* Seção 1 */
+section.header-master {
+    width: 100%;
+    padding: 30px 0;
+    min-height: 700px;
+    background-image: url('images/bg_01.png');
+    background-size: cover;
+}
+
+section.header-master header {
+    border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+    padding-bottom: 20px;
+}
+
+div.logo {
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url('images/logo.png');
+    background-size: 100% 100%;
+}
+
+nav.mobile {
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+}
+
+nav.mobile img {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+ul.nav-mobile {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #509d87;
+    list-style-type: none;
+    width: 100%;
+}
+
+ul.nav-mobile li:hover {
+    background-color: #45b89b;
+}
+
+ul.nav-mobile li {
+    padding: 9px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+ul.nav-mobile a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav.desktop {
+    float: left;
+    padding-left: 60px;
+}
+
+header nav.desktop ul {
+    list-style-type: none;
+}
+
+header nav.desktop li {
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+
+header nav.desktop li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li.selected {
+    color: #509d87;
+    position: relative;
+}
+
+li.selected > span {
+    position: absolute;
+    width: 17px;
+    height: 3px;
+    background-color: #509d87;
+    bottom: 0;
+}
+
+div.telefone-header {
+    float: left;
+    position: relative;
+    top: -4px;
+}
+
+div.telefone-header span {
+    font-size: 22px;
+    color: white;
+    padding-left: 30px;
+}
+
+.content-header {
+    padding: 70px;
+}
+
+.content-header .one {
+    float: left;
+    width: 50%;
+}
+
+.content-header .one h2 {
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+
+.content-header .one p{
+    padding:10px 0;
+	font-size: 15px;
+    color: rgba(54, 54, 54, 0.724);
+}
+
+.content-header .one form input{
+	display: inline-block;
+}
+
+.content-header .one form input[type=email]{
+	width: 251px;
+	height: 40px;
+	margin:10px 0;
+	border:3px solid #ccc;
+	border-radius: 130px;
+	padding-left: 15px;
+    margin: 10px 0;
+}
+
+.content-header .one form input[type=email]:focus{
+	outline: 0;
+}
+
+.content-header .one form input[type=submit]{
+	background-color: #509d87;
+	margin:10px 0;
+	color: white;
+	cursor: pointer;
+	border:0;
+	height: 40px;
+	padding:0px 30px;
+	border-radius: 30px;
+	font-size: 14px;
+    margin: 10px 0;
+}
+
+.content-header .one form input[type=submit]:hover {
+    background-color: #45b89b;
+}
+
+.content-header .one span{
+	color: #509d87;
+	font-size: 13px;
+	margin-top: 20px;
+	display: block;
+    padding:10px 0;
+	font-size: 15px;
+}
+
+.content-header .two {
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+    position: relative;
+    top: -30px;
+}
+
+.content-header .two img {
+    width: 50%;
+    float: left;
+    border: 10px solid transparent;
+}
+
+/* Diferenciais */
+section.diferenciais {
+    padding: 40px 0;
+}
+
+section.diferenciais > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferencial-single {
+    width: 33.3%;
+    margin-bottom: 25px;
+    padding-right: 20px;
+}
+
+.diferencial-single img {
+    max-width: 100%;
+}
+
+.diferencial-single h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+    margin: 25px 0;
+}
+
+.diferencial-single h2 > b {
+    color: #7dd5b0;
+    font-weight: normal;
+}
+
+.diferencial-single p {
+    color: rgba(54, 54, 54, 0.724);
+    font-size: 15px;
+}
+/**/
+
+.sobre > .container {
+    max-width: 1440px;
+}
+
+.sobre-container {
+    float: left;
+    width: 50%;
+}
+
+.sobre-container img {
+    max-width: 100%;
+}
+
+.sobre-container {
+    float: left;
+    width: 50%;
+}
+
+.sobre-container h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: normal;
+    color: rgba(97, 97, 97, 0.579);
+}
+
+.sobre-container h2 > b {
+    color: #7dd5b0;
+    font-weight: normal;
+}
+
+.sobre-container p {
+    color: rgba(54, 54, 54, 0.724);
+    font-size: 15px;
+}
+
+.padsobre {
+    padding: 10px 50px;
+}
+
+section.depoimento {
+    position: relative;
+    top: -110px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url('images/bg_02.png');
+    background-size: cover;
+    width: 100%;
+    color: #509d87;
+}
+
+section.depoimento h2 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: normal;
+}
+
+section.depoimento p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+section.etapas {
+    padding: 40px 0;
+}
+
+section.etapas > .container {
+    max-width: 1200px;
+}
+
+section.etapas h2 {
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    font-size: 29px;
+}
+
+.etapas__single {
+    float: left;
+    width: 50%;
+}
+
+.etapas__group img {
+    max-width: 100%;
+    float: left;    
+}
+
+.etapas__group p {
+    float: left;
+    color: rgba(54, 54, 54, 0.724);
+    padding-top: 155px;
+    padding-left: 30px;
+}
+
+.etapas__group2 {
+    margin-bottom: 40px;
+}
+
+.etapas__group2 .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+    float: left;
+}
+
+.circle span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 40px;
+    width: 1px;
+    background-color: #7dd5b0;
+}
+
+.etapas__descricao {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 20px;
+}
+
+.etapas__descricao h3 {
+    color: #7dd5b0;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.etapas__descricao p {
+    color: rgba(54, 54, 54, 0.724);
+    font-size: 15px;
+}
+
+section.diferencas {
+    padding: 50px 0;
+}
+
+section.diferencas > .container {
+    text-align: center;
+    max-width: 800px;
+}
+
+.diferencas > .container > h2 {
+    margin-bottom: 60px;
+    font-weight: normal;
+    font-size: 29px;
+}
+
+.diferencas__single {
+    float: left;
+    width: 50%;
+}
+
+.diferencas__single h2 {
+    color: rgba(97, 97, 97, 0.579);
+    font-size: 29px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.item-diferencas-1 {
+    margin-top: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.item-diferencas-2 {
+    margin-top: 17px;
+}
+
+.line-diferencas-1 {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e89595;
+    z-index: 999;
+    transform: rotate(-5deg);
+}
+
+.item-diferencas-1 span {
+    font-size: 21px;
+    color: rgba(54, 54, 54, 0.724);
+}
+
+.item-diferencas-2 span {
+    color: #7dd5b0;
+    font-size: 21px;
+    position: relative;
+    top: -10px;
+}
+
+section.contato {
+    padding: 40px 0;
+    background-color: #98FCDE;
+}
+
+section.contato h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #509d87;
+    font-weight: normal;
+    margin-bottom: 34px;
+}
+
+section.contato p {
+    font-size: 14px;
+    color: #509d87;
+    border-bottom: 1px solid #509d87;
+    padding: 10px 0;
+}
+
+section.contato > .container {
+    max-width: 800px;
+}
+
+section.contato input[type=text] {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 20px;
+}
+
+section.contato textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: none;
+    outline: none;
+    padding: 20px;
+}
+
+section.contato input[type=submit] {
+    width: 170px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: #509d87;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section.contato input[type=submit]:hover {
+    background-color: #45b89b;
+}
+
+footer {
+    background-color: #6CC5B2;
+    text-align: center;
+    padding: 25px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .etapas__single {
+        width: 100%;
+    }
+
+    section.etapas > .container {
+        max-width: 700px;
+    }
+
+    .etapas__group img {
+        max-width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .etapas__single .etapas__group:nth-of-type(1) img {
+        max-width: 100%;
+        width: auto;
+        padding-top: 15px;
+    }
+
+    .etapas__group {
+        margin-bottom: 40px;
+    }
+
+    .etapas__group p {
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: none;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 905px) {
+
+    .content-header .one {
+        text-align: center;
+        width: 100%;
+    }
+
+    .content-header .two {
+        display: none;
+    }
+
+    .telefone-header {
+        display: none;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    section.header-master {
+        min-height: 400px;
+    }
+
+    .diferencial-single {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre-container {
+        width: 100%;
+    }
+
+    .padsobre {
+        padding: 0;
+    }
+
+    section.depoimento {
+        top: 0;
+    }
+
+    .sobre-container img {
+        top: 0;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile img {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    section.diferencas {
+        padding: 0;
+    }
+
+    .diferencas__single {
+        width: 100%; 
+        margin-bottom: 48px;
+        border-right: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .etapas__group2 {
+        display: none;
+    }
+}
